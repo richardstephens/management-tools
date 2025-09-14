@@ -15,6 +15,8 @@ WORKDIR /build/azure
 RUN /build/azure/install-azure-cli.sh
 
 
+WORKDIR /
+
 RUN apt install -y postgresql-client-16
 
 RUN apt install -y openssh-server
